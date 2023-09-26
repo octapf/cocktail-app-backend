@@ -54,27 +54,37 @@ export const createProduct = asyncHandler(async (req, res) => {
 		history,
 	} = req.body
 
-	const newProduct = {
-		user,
-		name,
-		type,
-		ingredients,
-		method,
-		glass,
-		ice,
-		garnish,
-		optional,
-		price,
-		history,
-	}
-
 	try {
-		const productFound = await Product.findOne({ name: req.body.name })
+		if (
+			user !== undefined &&
+			name !== undefined &&
+			type !== undefined &&
+			ingredients !== undefined
+		) {
+			const newProduct = {
+				user,
+				name,
+				type,
+				ingredients,
+				method,
+				glass,
+				ice,
+				garnish,
+				optional,
+				price,
+				history,
+			}
 
-		if (productFound !== null) {
-			res.status(409).send('Product already exists')
+			const productFound = await Product.findOne({ name })
+
+			if (productFound !== undefined) {
+				res.status(409).send('Product already exists')
+			} else {
+				const createdProduct = await Product.create(newProduct)
+				res.json(createdProduct)
+			}
 		} else {
-			res.send(await Product.create(newProduct))
+			res.status(400).send('Bad request')
 		}
 	} catch (error) {
 		console.log(error)

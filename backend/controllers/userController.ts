@@ -39,22 +39,31 @@ export const getUserById = asyncHandler(async (req: Request, res: Response) => {
 })
 
 export const createUser = asyncHandler(async (req: Request, res: Response) => {
-	const newUser = {
-		firstname: req.body.firstname,
-		lastname: req.body.lastname,
-		email: req.body.email,
-	}
+	const { firstname, lastname, email } = req.body
 
 	try {
-		const userFound = await User.findOne({ email: req.body.email })
+		if (
+			firstname !== undefined &&
+			lastname !== undefined &&
+			email !== undefined
+		) {
+			const newUser = {
+				firstname,
+				lastname,
+				email,
+			}
 
-		if (userFound !== null) {
-			res.status(409).send('User already exists')
+			const userFound = await User.findOne({ email })
+
+			if (userFound !== undefined) {
+				res.status(409).send('User already exists')
+			} else {
+				const createdUser = await User.create(newUser)
+				res.json(createdUser)
+			}
+		} else {
+			res.status(400).send('Bad request')
 		}
-
-		const createdUser = await User.create(newUser)
-
-		res.json(createdUser)
 	} catch (error) {
 		console.log(error)
 	}

@@ -50,18 +50,28 @@ exports.getUserById = (0, express_async_handler_1.default)((req, res) => __await
     }
 }));
 exports.createUser = (0, express_async_handler_1.default)((req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const newUser = {
-        firstname: req.body.firstname,
-        lastname: req.body.lastname,
-        email: req.body.email,
-    };
+    const { firstname, lastname, email } = req.body;
     try {
-        const userFound = yield userModel_1.default.findOne({ email: req.body.email });
-        if (userFound !== null) {
-            res.status(409).send('User already exists');
+        if (firstname !== undefined &&
+            lastname !== undefined &&
+            email !== undefined) {
+            const newUser = {
+                firstname,
+                lastname,
+                email,
+            };
+            const userFound = yield userModel_1.default.findOne({ email });
+            if (userFound !== undefined) {
+                res.status(409).send('User already exists');
+            }
+            else {
+                const createdUser = yield userModel_1.default.create(newUser);
+                res.json(createdUser);
+            }
         }
-        const createdUser = yield userModel_1.default.create(newUser);
-        res.json(createdUser);
+        else {
+            res.status(400).send('Bad request');
+        }
     }
     catch (error) {
         console.log(error);

@@ -51,26 +51,35 @@ exports.getProductById = (0, express_async_handler_1.default)((req, res) => __aw
 }));
 exports.createProduct = (0, express_async_handler_1.default)((req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { user, name, type, ingredients, method, glass, ice, garnish, optional, price, history, } = req.body;
-    const newProduct = {
-        user,
-        name,
-        type,
-        ingredients,
-        method,
-        glass,
-        ice,
-        garnish,
-        optional,
-        price,
-        history,
-    };
     try {
-        const productFound = yield productModel_1.default.findOne({ name: req.body.name });
-        if (productFound !== null) {
-            res.status(409).send('Product already exists');
+        if (user !== undefined &&
+            name !== undefined &&
+            type !== undefined &&
+            ingredients !== undefined) {
+            const newProduct = {
+                user,
+                name,
+                type,
+                ingredients,
+                method,
+                glass,
+                ice,
+                garnish,
+                optional,
+                price,
+                history,
+            };
+            const productFound = yield productModel_1.default.findOne({ name });
+            if (productFound !== undefined) {
+                res.status(409).send('Product already exists');
+            }
+            else {
+                const createdProduct = yield productModel_1.default.create(newProduct);
+                res.json(createdProduct);
+            }
         }
         else {
-            res.send(yield productModel_1.default.create(newProduct));
+            res.status(400).send('Bad request');
         }
     }
     catch (error) {
