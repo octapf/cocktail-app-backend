@@ -20,7 +20,7 @@ export const getProductById = asyncHandler(
 		const { id } = req.params
 
 		try {
-			if (id !== null && mongoose.Types.ObjectId.isValid(id)) {
+			if (id !== undefined && mongoose.Types.ObjectId.isValid(id)) {
 				const _id = new mongoose.Types.ObjectId(id)
 				const foundProduct = await Product.findById({ _id })
 
@@ -39,54 +39,84 @@ export const getProductById = asyncHandler(
 	}
 )
 
-export const createProduct = asyncHandler(async (req, res) => {
-	const {
-		user,
-		name,
-		type,
-		ingredients,
-		method,
-		glass,
-		ice,
-		garnish,
-		optional,
-		price,
-		history,
-	} = req.body
+export const createProduct = asyncHandler(
+	async (req: Request, res: Response) => {
+		const {
+			user,
+			name,
+			type,
+			ingredients,
+			method,
+			glass,
+			ice,
+			garnish,
+			optional,
+			price,
+			history,
+		} = req.body
 
-	try {
-		if (
-			user !== undefined &&
-			name !== undefined &&
-			type !== undefined &&
-			ingredients !== undefined
-		) {
-			const newProduct = {
-				user,
-				name,
-				type,
-				ingredients,
-				method,
-				glass,
-				ice,
-				garnish,
-				optional,
-				price,
-				history,
-			}
+		try {
+			if (
+				user !== undefined &&
+				name !== undefined &&
+				type !== undefined &&
+				ingredients !== undefined
+			) {
+				const newProduct = {
+					user,
+					name,
+					type,
+					ingredients,
+					method,
+					glass,
+					ice,
+					garnish,
+					optional,
+					price,
+					history,
+				}
 
-			const productFound = await Product.findOne({ name })
+				const productFound = await Product.findOne({ name })
 
-			if (productFound !== undefined) {
-				res.status(409).send('Product already exists')
+				if (productFound !== undefined) {
+					res.status(409).send('Product already exists')
+				} else {
+					const createdProduct = await Product.create(newProduct)
+					res.json(createdProduct)
+				}
 			} else {
-				const createdProduct = await Product.create(newProduct)
-				res.json(createdProduct)
+				res.status(400).send('Bad request')
 			}
-		} else {
-			res.status(400).send('Bad request')
+		} catch (error) {
+			console.log(error)
 		}
-	} catch (error) {
-		console.log(error)
 	}
-})
+)
+
+export const deleteProductById = asyncHandler(
+	async (req: Request, res: Response) => {
+		res.send('hi')
+	}
+)
+
+// export const deleteProductById = asyncHandler(
+// 	async (req: Request, res: Response) => {
+// 		// const { id } = req.params
+
+// 		console.log('HI')
+
+// 		// try {
+// 		// 	if (id !== undefined && mongoose.Types.ObjectId.isValid(id)) {
+// 		// 		const _id = new mongoose.Types.ObjectId(id)
+// 		// 		const response = await Product.deleteOne({ _id })
+
+// 		// 		console.log(response)
+// 		// 		res.send(response)
+// 		// 	} else {
+// 		// 		res.status(400).json('Bad Request')
+// 		// 	}
+// 		// } catch (error) {
+// 		// 	console.error(error)
+// 		// }
+// 	}
+// )
