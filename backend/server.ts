@@ -21,11 +21,10 @@ app.use(
 app.use('/products', productRoutes)
 app.use('/users', userRoutes)
 
-app.use('*', errorHandler)
-
 app.get('/', (req: Request, res: Response) => {
 	res.send('Express + TypeScript Server')
 })
+app.use('*', errorHandler)
 
 app.listen(port, () => {
 	console.log(`⚡️[server]: Server is running at http://localhost:${port}`)
