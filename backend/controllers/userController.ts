@@ -1,9 +1,10 @@
 import asyncHandler from 'express-async-handler'
-import express, { Request, Response } from 'express'
+import { Request, Response } from 'express'
+import mongoose from 'mongoose'
 
 import User from '../models/userModel'
 
-export const getUsers = asyncHandler(async (req, res) => {
+export const getUsers = asyncHandler(async (req: Request, res: Response) => {
 	try {
 		const users = await User.find({})
 
@@ -12,6 +13,28 @@ export const getUsers = asyncHandler(async (req, res) => {
 		console.error(error)
 		res.status(404)
 		throw new Error('No users found.')
+	}
+})
+
+export const getUserById = asyncHandler(async (req: Request, res: Response) => {
+	const { id } = req.params
+
+	try {
+		if (id !== null && mongoose.Types.ObjectId.isValid(id)) {
+			const _id = new mongoose.Types.ObjectId(id)
+			const foundUser = await User.findById({ _id })
+
+			if (foundUser !== null) {
+				res.send(foundUser)
+			} else {
+				res.status(400).json('Bad request')
+			}
+		} else {
+			res.status(400).json('Bad request')
+		}
+	} catch (error) {
+		console.error(error)
+		throw new Error('Error')
 	}
 })
 
