@@ -10,7 +10,7 @@ exports.productRoutes.get('/', (req, res) => {
     res.send('PRODUCTS');
 });
 exports.productRoutes.post('/', (req, res) => {
-    res.send('PRODUCTS');
+    const product = {};
 });
 exports.productRoutes.put('/', (req, res) => {
     res.send('PRODUCTS');

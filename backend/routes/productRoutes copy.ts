@@ -7,7 +7,7 @@ productRoutes.get('/', (req: Request, res: Response) => {
 })
 
 productRoutes.post('/', (req: Request, res: Response) => {
-	res.send('PRODUCTS')
+	const product = {}
 })
 
 productRoutes.put('/', (req: Request, res: Response) => {
