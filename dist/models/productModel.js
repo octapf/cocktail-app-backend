@@ -10,7 +10,7 @@ const productSchema = new mongoose_1.default.Schema({
         required: true,
         ref: 'User',
     },
-    name: { type: String, required: true },
+    name: { type: String, required: true, unique: true },
     type: { type: String, required: true },
     ingredients: [
         {

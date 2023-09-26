@@ -1,24 +1,8 @@
-import express, { Request, Response } from 'express'
-import User from '../models/userModel'
+import express from 'express'
+import { createUser, getUsers } from '../controllers/userController'
 
-export const userRoutes = express.Router()
+const router = express.Router()
 
-userRoutes.get('/', (req: Request, res: Response) => {
-	res.send('USERS')
-})
+router.route('/').get(getUsers).post(createUser)
 
-userRoutes.post('/', (req: Request, res: Response) => {
-	const newUser = {
-		firstname: req.body.firstname,
-		lastname: req.body.lastname,
-		email: req.body.email,
-	}
-
-	try {
-		User.create(newUser).then((r) => {
-			res.send(r)
-		})
-	} catch (error) {
-		console.log(error)
-	}
-})
+export default router
