@@ -93,6 +93,24 @@ export const createProduct = asyncHandler(
 	}
 )
 
+export const updateProductFieldById = asyncHandler(
+	async (req: Request, res: Response) => {
+		const _id = req.params.id
+		const update = req.body
+
+		if (_id !== undefined && mongoose.Types.ObjectId.isValid(_id)) {
+			const updatedProduct = await Product.findOneAndUpdate({ _id }, update, {
+				new: true,
+			})
+
+			console.log(updatedProduct)
+			res.send(updatedProduct)
+		} else {
+			res.status(400).send('Invalid id')
+		}
+	}
+)
+
 export const deleteProductById = asyncHandler(
 	async (req: Request, res: Response) => {
 		const _id = req.params.id
