@@ -2,6 +2,7 @@ import asyncHandler from 'express-async-handler'
 import Product from '../models/productModel'
 import { Request, Response } from 'express'
 import mongoose from 'mongoose'
+import { isArray } from 'util'
 
 export const getProducts = asyncHandler(async (req: Request, res: Response) => {
 	try {
@@ -78,7 +79,7 @@ export const createProduct = asyncHandler(
 
 				const productFound = await Product.findOne({ name })
 
-				if (productFound !== undefined) {
+				if (productFound !== null) {
 					res.status(409).send('Product already exists')
 				} else {
 					const createdProduct = await Product.create(newProduct)

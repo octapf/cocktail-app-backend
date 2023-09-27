@@ -8,12 +8,15 @@ endpoints:
   - getProducts 🆗
   - getProductById 🆗
   - createProduct 🆗
-  - updateProductById
+  - updateProductById?
+  - createManyProducts > insertMany mongoose
+  - updateProductFieldById 🆗
   - deleteProductById 🆗
 
 - users
   - getUsers 🆗
   - getUserById 🆗
   - createUser 🆗
-  - updateUserById
+  - updateUserFieldById 🆗
+  - updateUserById?
   - deleteUserById 🆗
