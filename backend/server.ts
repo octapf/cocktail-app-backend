@@ -1,7 +1,7 @@
 import express, { Express, Request, Response } from 'express'
 import dotenv from 'dotenv'
 import userRoutes from './routes/userRoutes'
-import productRoutes from './routes/productRoutes copy'
+import productRoutes from './routes/productRoutes'
 import { errorHandler } from './routes/errorHandler'
 import { connect } from './connectDB'
 

@@ -9,11 +9,11 @@ endpoints:
   - getProductById 🆗
   - createProduct 🆗
   - updateProductById
-  - deleteProductById
+  - deleteProductById 🆗
 
 - users
   - getUsers 🆗
   - getUserById 🆗
   - createUser 🆗
   - updateUserById
-  - deleteUserById
+  - deleteUserById 🆗

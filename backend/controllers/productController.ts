@@ -95,28 +95,18 @@ export const createProduct = asyncHandler(
 
 export const deleteProductById = asyncHandler(
 	async (req: Request, res: Response) => {
-		res.send('hi')
+		const _id = req.params.id
+
+		try {
+			const foundProduct = await Product.findById({ _id })
+			if (foundProduct !== null) {
+				await Product.deleteOne({ _id })
+				res.send(`Product ${_id} deleted`)
+			} else {
+				res.status(404).send('Product not found')
+			}
+		} catch (error) {
+			console.error(error)
+		}
 	}
 )
-
-// export const deleteProductById = asyncHandler(
-// 	async (req: Request, res: Response) => {
-// 		// const { id } = req.params
-
-// 		console.log('HI')
-
-// 		// try {
-// 		// 	if (id !== undefined && mongoose.Types.ObjectId.isValid(id)) {
-// 		// 		const _id = new mongoose.Types.ObjectId(id)
-// 		// 		const response = await Product.deleteOne({ _id })
-
-// 		// 		console.log(response)
-// 		// 		res.send(response)
-// 		// 	} else {
-// 		// 		res.status(400).json('Bad Request')
-// 		// 	}
-// 		// } catch (error) {
-// 		// 	console.error(error)
-// 		// }
-// 	}
-// )

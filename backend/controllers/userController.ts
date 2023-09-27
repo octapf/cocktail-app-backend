@@ -55,7 +55,7 @@ export const createUser = asyncHandler(async (req: Request, res: Response) => {
 
 			const userFound = await User.findOne({ email })
 
-			if (userFound !== undefined) {
+			if (userFound !== null) {
 				res.status(409).send('User already exists')
 			} else {
 				const createdUser = await User.create(newUser)
@@ -68,3 +68,21 @@ export const createUser = asyncHandler(async (req: Request, res: Response) => {
 		console.log(error)
 	}
 })
+
+export const deleteUserById = asyncHandler(
+	async (req: Request, res: Response) => {
+		const _id = req.params.id
+
+		try {
+			const foundUser = await User.findById({ _id })
+			if (foundUser !== null) {
+				await User.deleteOne({ _id })
+				res.send(`User ${_id} deleted`)
+			} else {
+				res.status(404).send('User not found')
+			}
+		} catch (error) {
+			console.error(error)
+		}
+	}
+)
