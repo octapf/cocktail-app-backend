@@ -69,6 +69,24 @@ export const createUser = asyncHandler(async (req: Request, res: Response) => {
 	}
 })
 
+export const updateUserFieldById = asyncHandler(
+	async (req: Request, res: Response) => {
+		const _id = req.params.id
+		const update = req.body
+
+		if (_id !== undefined && mongoose.Types.ObjectId.isValid(_id)) {
+			const updatedUser = await User.findOneAndUpdate({ _id }, update, {
+				new: true,
+			})
+
+			console.log(updatedUser)
+			res.send(updatedUser)
+		} else {
+			res.status(400).send('Invalid id')
+		}
+	}
+)
+
 export const deleteUserById = asyncHandler(
 	async (req: Request, res: Response) => {
 		const _id = req.params.id
