@@ -1,10 +1,10 @@
 import express, { Express, Request, Response } from 'express'
 import dotenv from 'dotenv'
-import userRoutes from './routes/userRoutes'
-import productRoutes from './routes/productRoutes'
-import { errorHandler } from './routes/errorHandler'
+import userRoutes from './src/routes/userRoutes'
+import productRoutes from './src/routes/productRoutes'
+import { errorHandler } from './src/routes/errorHandler'
 import cors from 'cors'
-import { connect } from './connectDB'
+import { connect } from './src/connectDB'
 
 dotenv.config()
 
