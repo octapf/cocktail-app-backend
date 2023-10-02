@@ -1,10 +1,10 @@
 import express, { Express, Request, Response } from 'express'
 import dotenv from 'dotenv'
-import userRoutes from './src/routes/userRoutes'
-import productRoutes from './src/routes/productRoutes'
-import { errorHandler } from './src/routes/errorHandler'
+import userRoutes from './routes/userRoutes'
+import productRoutes from './routes/productRoutes'
+import { errorHandler } from './routes/errorHandler'
 import cors from 'cors'
-import { connect } from './src/connectDB'
+import { connect } from './connectDB'
 
 dotenv.config()
 
@@ -37,3 +37,5 @@ app.use('*', errorHandler)
 app.listen(port, () => {
 	console.log(`⚡️[server]: Server is running at http://localhost:${port}`)
 })
+
+export default app
