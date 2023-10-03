@@ -2,7 +2,6 @@ import asyncHandler from 'express-async-handler'
 import Product from '../models/productModel'
 import { Request, Response } from 'express'
 import mongoose from 'mongoose'
-import { isArray } from 'util'
 
 export const getProducts = asyncHandler(async (req: Request, res: Response) => {
 	try {
