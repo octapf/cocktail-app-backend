@@ -48,7 +48,8 @@
 		"ice": "Cubed",
 		"garnish": "Lime Wedge",
 		"optional": ["Vodka & Tonic: Replace Gin with Vodka"],
-		"price": 6
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
 	},
 	{
 		"user": "",
@@ -65,7 +66,8 @@
 		"ice": "Cubed",
 		"garnish": "",
 		"optional": [],
-		"price": 6
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
 	},
 	{
 		"user": "",
@@ -81,7 +83,8 @@
 		"ice": "Cubed",
 		"garnish": "",
 		"optional": [],
-		"price": 6
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
 	},
 	{
 		"user": "",
@@ -97,7 +100,8 @@
 		"ice": "Cubed",
 		"garnish": "",
 		"optional": [],
-		"price": 6
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
 	},
 	{
 		"user": "",
@@ -117,7 +121,8 @@
 			"Tommy's Margarita: Replace Triple Sec and sugar with Agave Syrup",
 			"Frozen Margarita: Add 1 scoop of crushed ice and double the sugar syrup"
 		],
-		"price": 6
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
 	},
 	{
 		"user": "",
@@ -135,7 +140,8 @@
 		"ice": "Cubed",
 		"garnish": "Pineapple wedge & Cherry",
 		"optional": [],
-		"price": 6
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
 	},
 	{
 		"user": "",
@@ -146,7 +152,7 @@
 			{ "name": "Sugar Syrup", "quantity": "3/4 Oz" },
 			{ "name": "Cachaça", "quantity": "2 Oz" }
 		],
-		"method": "Muddle, Build,Churn",
+		"method": "Muddle, Build, Churn",
 		"glass": "Rocks",
 		"ice": "Crushed",
 		"garnish": "Lime Wedge",
@@ -154,7 +160,8 @@
 			"Fuit Caipirinha: Add fruit and fruit liqueur",
 			"Caipiroska: Replace Cachaça with Vodka"
 		],
-		"price": 6
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
 	},
 	{
 		"user": "",
@@ -169,7 +176,472 @@
 		"ice": "Cubed",
 		"garnish": "None",
 		"optional": ["Godmother: Replace Scotch Whisky with Vodka"],
-		"price": 6
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "Spirit & Mixer",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "Spirit", "quantity": "1 1/2 Oz" },
+			{ "name": "Mixer", "quantity": "Fill" }
+		],
+		"method": "Build",
+		"glass": "Highball",
+		"ice": "Cubed",
+		"garnish": "Lemon / Lime wedge or none",
+		"optional": [""],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "Rusty Nail",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "Grant's Scotch Whisky", "quantity": "1 Oz" },
+			{ "name": "Drambuie", "quantity": "1 Oz" }
+		],
+		"method": "Build",
+		"glass": "Rocks",
+		"ice": "Cubed",
+		"garnish": "Lemon Zest",
+		"optional": [""],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "Black Russian",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "Vodka", "quantity": "1 1/2 Oz" },
+			{ "name": "Coffee Liqueur", "quantity": "3/4 Oz" }
+		],
+		"method": "Build",
+		"glass": "Rocks",
+		"ice": "Cubed",
+		"garnish": "",
+		"optional": [""],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "White Russian",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "Vodka", "quantity": "1 1/2 Oz" },
+			{ "name": "Coffee Liqueur", "quantity": "3/4 Oz" },
+			{ "name": "Milk", "quantity": "Fill" }
+		],
+		"method": "Build",
+		"glass": "Rocks",
+		"ice": "Cubed",
+		"garnish": "",
+		"optional": [
+			"Replace Milk with Cream or Half and Half",
+			"Colorado Bulldog: Top with Coca Cola"
+		],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "Moscow Mule",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "Vodka", "quantity": "1 1/2 Oz" },
+			{ "name": "Fresh Lime Juice", "quantity": "3/4 Oz" },
+			{ "name": "Ginger Beer", "quantity": "Fill" }
+		],
+		"method": "Build",
+		"glass": "Highball / Copper Mug",
+		"ice": "Cubed",
+		"garnish": "Lime Wedge",
+		"optional": [
+			"Missouri Mule: Replace Vodka with Southern Comfort",
+			"Jamaican Mule: Replace Vodka with Spiced Rum"
+		],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "Woo Woo",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "Vodka", "quantity": "3/4 Oz" },
+			{ "name": "Peache Liqueur", "quantity": "3/4 Oz" },
+			{ "name": "Cramberry Juice", "quantity": "Fill" }
+		],
+		"method": "Build",
+		"glass": "Highball",
+		"ice": "Cubed",
+		"garnish": "Lime Wedge",
+		"optional": ["Cape Codder: Replace Peach Liqueur with Vodka"],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "Americano",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "Sweet Vermouth", "quantity": "1 Oz" },
+			{ "name": "Campari", "quantity": "1 Oz" },
+			{ "name": "Soda Water", "quantity": "1 Oz" }
+		],
+		"method": "Build & Stir",
+		"glass": "Rocks",
+		"ice": "Cubed",
+		"garnish": "Orange zest or Orange slice",
+		"optional": [""],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "Screaming Orgasm",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "Vodka", "quantity": "1/2 Oz" },
+			{ "name": "Coffee Liqueur", "quantity": "1/2 Oz" },
+			{ "name": "Amaretto", "quantity": "1/2 Oz" },
+			{ "name": "Baileys", "quantity": "1/2 Oz" },
+			{ "name": "Milk", "quantity": "1 1/2 Oz" }
+		],
+		"method": "Shake & Strain",
+		"glass": "Rocks",
+		"ice": "Cubed",
+		"garnish": "",
+		"optional": ["Replace milk with Cream or half & half", "Orgasm: No vodka"],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "El Diablo",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "Tequila", "quantity": "1 Oz" },
+			{ "name": "Creme de Cassis", "quantity": "1/2 Oz" },
+			{ "name": "Fresh Lime Juice", "quantity": "1/2 Oz" },
+			{ "name": "Ginger Ale", "quantity": "Fill" }
+		],
+		"method": "Build",
+		"glass": "Highball",
+		"ice": "Cubed",
+		"garnish": "Lime Wedge",
+		"optional": [""],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "Cosmopolitan",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "Citron Vodka", "quantity": "1 1/2 Oz" },
+			{ "name": "Triple Sec", "quantity": "3/4 Oz" },
+			{ "name": "Fresh Lime Juice", "quantity": "1/2 Oz" },
+			{ "name": "Cranberry Juice", "quantity": "1 Oz" }
+		],
+		"method": "Shake & Fine Strain",
+		"glass": "Chilled Martini / Coupe",
+		"ice": "none",
+		"garnish": "Orange Zest",
+		"optional": ["Flamed Orange Zest"],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "French Martini",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "Vodka", "quantity": "1 1/2 Oz" },
+			{ "name": "Chambord", "quantity": "3/4 Oz" },
+			{ "name": "Pineapple Juice", "quantity": "1 1/2 Oz" }
+		],
+		"method": "Shake & Fine Strain",
+		"glass": "Chilled Martini / Coupe",
+		"ice": "none",
+		"garnish": "1 Raspberry",
+		"optional": ["Muddle Fresh Pineapple", "Pineapple Leaf Garnish"],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "Lynchburg Lemonade",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "Jack Daniel's", "quantity": "1 1/2 Oz" },
+			{ "name": "Triple Sec", "quantity": "3/4 Oz" },
+			{ "name": "Fresh Lemon Juice", "quantity": "3/4 Oz" },
+			{ "name": "Sugar Syrup", "quantity": "1/2 Oz" },
+			{ "name": "Sprite / Lemonade", "quantity": "Top" }
+		],
+		"method": "Shake & Strain",
+		"glass": "Highball",
+		"ice": "Cubed",
+		"garnish": "Lemon Wedge",
+		"optional": [""],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "Horse's Neck",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "Angostura Bitters", "quantity": "2 Dashes" },
+			{ "name": "Bourbon", "quantity": "1 1/2 Oz" },
+			{ "name": "Ginger Ale", "quantity": "Fill" }
+		],
+		"method": "Build",
+		"glass": "Highball",
+		"ice": "Cubed",
+		"garnish": "Lemon Spiral",
+		"optional": ["Replace Bourbon with Brandy"],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "Tom Collins",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "Gin", "quantity": "2 Oz" },
+			{ "name": "Fresh Lemon Juice", "quantity": "1 Oz" },
+			{ "name": "Sugar Syrup", "quantity": "1/2 Oz" },
+			{ "name": "Soda Water", "quantity": "Top" }
+		],
+		"method": "Shake & Strain",
+		"glass": "Highball",
+		"ice": "Cubed",
+		"garnish": "Lemon Wedge",
+		"optional": ["John Collins: Replace Gin with Bourbon"],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "Long Island Iced Tea",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "vodka", "quantity": "1/2 Oz" },
+			{ "name": "Light Rum", "quantity": "1/2 Oz" },
+			{ "name": "Gin", "quantity": "1/2 Oz" },
+			{ "name": "Tequila", "quantity": "1/2 Oz" },
+			{ "name": "Triple Sec", "quantity": "1/2 Oz" },
+			{ "name": "Fresh Lemon Juice", "quantity": "1/2 Oz" },
+			{ "name": "Sugar Syrup", "quantity": "3/4 Oz" },
+			{ "name": "Coca Cola", "quantity": "1/2 Oz" }
+		],
+		"method": "Shake & Strain",
+		"glass": "Highball",
+		"ice": "Cubed",
+		"garnish": "Lemon Wedge",
+		"optional": [
+			"Long Beach Iced Tea: Replace Coca Cola with Cranberry Juice",
+			"Beverly Hills Iced Tea: Replace Coca Cola with Champagne"
+		],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "Dry Martini",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "Dry Vermouth", "quantity": "1 Barspoon" },
+			{ "name": "Gin Or Vodka", "quantity": "2 Oz" }
+		],
+		"method": "Stir & Julep Strain",
+		"glass": "Chilled Martini / Coupe",
+		"ice": "none",
+		"garnish": "Olives or Lemon Zest",
+		"optional": [
+			"Naked: Only Gin",
+			"Dirty: 2 Barspoons of Olive Brine",
+			"Wet: More Dry Vermouth",
+			"Gibson: Garnish with Pearl Onions"
+		],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "Manhattan (Sweet)",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "Angostura Bitters", "quantity": "2 Dashes" },
+			{ "name": "Sweet Vermouth", "quantity": "3/4 Oz" },
+			{ "name": "Grant's Scotch Whisky", "quantity": "2 Oz" }
+		],
+		"method": "Stir & Julep Strain",
+		"glass": "Chilled Martini / Coupe",
+		"ice": "None",
+		"garnish": "1 Cherry",
+		"optional": [
+			"Dry: Dry Vermouth, Replace cherry with lemon zest",
+			"Perfect: Both Vermouths & both garnishes"
+		],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "Rob Roy",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "Angostura Bitters", "quantity": "2 Dashes" },
+			{ "name": "Sweet Vermouth", "quantity": "3/4 Oz" },
+			{ "name": "Grant's Scotch Whisky", "quantity": "2 Oz" }
+		],
+		"method": "Stir & Julep Strain",
+		"glass": "Chilled Martini / Coupe",
+		"ice": "None",
+		"garnish": "1 Cherry",
+		"optional": [""],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "NAME",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" }
+		],
+		"method": "METHOD",
+		"glass": "GLASS",
+		"ice": "ICE",
+		"garnish": "GARNISH",
+		"optional": ["OPTIONAL"],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "NAME",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" }
+		],
+		"method": "METHOD",
+		"glass": "GLASS",
+		"ice": "ICE",
+		"garnish": "GARNISH",
+		"optional": ["OPTIONAL"],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "NAME",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" }
+		],
+		"method": "METHOD",
+		"glass": "GLASS",
+		"ice": "ICE",
+		"garnish": "GARNISH",
+		"optional": ["OPTIONAL"],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "NAME",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" }
+		],
+		"method": "METHOD",
+		"glass": "GLASS",
+		"ice": "ICE",
+		"garnish": "GARNISH",
+		"optional": ["OPTIONAL"],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "NAME",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" }
+		],
+		"method": "METHOD",
+		"glass": "GLASS",
+		"ice": "ICE",
+		"garnish": "GARNISH",
+		"optional": ["OPTIONAL"],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "NAME",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" }
+		],
+		"method": "METHOD",
+		"glass": "GLASS",
+		"ice": "ICE",
+		"garnish": "GARNISH",
+		"optional": ["OPTIONAL"],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	{
+		"user": "",
+		"name": "NAME",
+		"type": "cocktail",
+		"ingredients": [
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" },
+			{ "name": "INGREDIENT", "quantity": "1 Oz" }
+		],
+		"method": "METHOD",
+		"glass": "GLASS",
+		"ice": "ICE",
+		"garnish": "GARNISH",
+		"optional": ["OPTIONAL"],
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
 	},
 	{
 		"user": "",
@@ -185,7 +657,8 @@
 		"ice": "Cubed",
 		"garnish": "Lemon Wedge",
 		"optional": ["Muddle Raspberries, Raspberry Garnish"],
-		"price": 6
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
 	},
 	{
 		"user": "",
@@ -201,7 +674,8 @@
 		"ice": "Cubed",
 		"garnish": "Lemon Wedge",
 		"optional": [""],
-		"price": 6
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
 	},
 	{
 		"user": "",
@@ -221,7 +695,8 @@
 		"optional": [
 			"Fruit Virgin Mojito: Muddle chosen fruit or use Puree. Top with Apple Juice"
 		],
-		"price": 6
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
 	},
 	{
 		"user": "",
@@ -238,7 +713,8 @@
 		"optional": [
 			"Replace Ginger Ale with sprite and add 1 part of orange juice."
 		],
-		"price": 6
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
 	},
 	{
 		"user": "",
@@ -257,6 +733,7 @@
 		"ice": "Cubed/none",
 		"garnish": "Celery stick",
 		"optional": ["Black pepper rim & Lime wedge"],
-		"price": 6
+		"price": 6,
+		"history": "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
 	}
 ]
