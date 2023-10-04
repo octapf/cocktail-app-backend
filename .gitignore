@@ -28,6 +28,4 @@ dist-ssr
 *.sln
 *.sw?
 
-vercel.json
-
 .vercel

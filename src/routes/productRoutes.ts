@@ -4,12 +4,15 @@ import {
 	deleteProductById,
 	getProductById,
 	getProducts,
+	insertManyProducts,
 	updateProductFieldById,
 } from '../controllers/productController'
 
 const router = express.Router()
 
 router.route('/').get(getProducts).post(createProduct)
+
+router.route('/insertmany').post(insertManyProducts)
 
 router
 	.route('/:id')

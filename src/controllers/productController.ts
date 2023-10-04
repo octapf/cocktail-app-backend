@@ -93,6 +93,20 @@ export const createProduct = asyncHandler(
 	}
 )
 
+export const insertManyProducts = asyncHandler(
+	async (req: Request, res: Response) => {
+		const products = req.body
+
+		try {
+			const createdProducts = await Product.insertMany(products)
+			res.json(createdProducts)
+		} catch (error) {
+			console.error(error)
+			res.status(400).json(error)
+		}
+	}
+)
+
 export const updateProductFieldById = asyncHandler(
 	async (req: Request, res: Response) => {
 		const _id = req.params.id
