@@ -97,6 +97,8 @@ export const insertManyProducts = asyncHandler(
 	async (req: Request, res: Response) => {
 		const products = req.body
 
+		console.log(products)
+
 		try {
 			const createdProducts = await Product.insertMany(products)
 			res.json(createdProducts)
